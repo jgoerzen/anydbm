@@ -43,7 +43,6 @@ import Prelude hiding (lookup)
 import System.IO
 import Data.HashTable
 import Control.Exception
-import Data.List.Utils(strFromAL, strToAL)
 
 {- | The main class for items implementing this interface.
 
@@ -167,3 +166,21 @@ instance AnyDBM (HashTable String String) where
     lookupA = lookup
     toListA = toList
     
+
+{- The following functions imported from MissingH to avoid a dep on
+ - MissingH -}
+strToAL :: (Read a, Read b) => String -> [(a, b)]
+strToAL inp =
+    let worker line =
+            case reads line of
+               [(key, remainder)] -> case remainder of
+                     ',':valstr -> (key, read valstr)
+                     _ -> error "Data.List.Utils.strToAL: Parse error on value"
+               _ -> error "Data.List.Utils.strToAL: Parse error on key"
+        in map worker (lines inp)
+
+strFromAL :: (Show a, Show b) => [(a, b)] -> String
+strFromAL inp =
+    let worker (key, val) = show key ++ "," ++ show val
+        in unlines . map worker $ inp
+
