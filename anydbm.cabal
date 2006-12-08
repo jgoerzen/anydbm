@@ -13,7 +13,7 @@ Exposed-Modules: Database.AnyDBM,
 Extensions: ExistentialQuantification, OverlappingInstances, 
    UndecidableInstances, CPP
 Build-Depends: base,
-               haskell98, mtl 
+               haskell98, mtl, MissingH>=0.18.0
 GHC-Options: -O2
 
 Executable: runtests
