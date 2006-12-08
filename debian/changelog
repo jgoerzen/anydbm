@@ -1,3 +1,11 @@
+haskell-anydbm (1.0.0) unstable; urgency=low
+
+  * Initial release of AnyDBM.  Closes: #402078.
+    This package was split off from MissingH due to the MissingH
+    transition plan.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu,  7 Dec 2006 06:46:41 -0600
+
 missingh (0.18.0) unstable; urgency=low
 
   * Major API changes in this release; several large modules being
