@@ -1,3 +1,9 @@
+haskell-anydbm (1.0.1) unstable; urgency=low
+
+  * Switched to correct Setup.hs.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu,  7 Dec 2006 18:07:34 -0600
+
 haskell-anydbm (1.0.0) unstable; urgency=low
 
   * Initial release of AnyDBM.  Closes: #402078.
