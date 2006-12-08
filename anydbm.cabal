@@ -1,0 +1,24 @@
+Name: anydbm
+Version: 1.0.0
+License: GPL
+Maintainer: John Goerzen <jgoerzen@complete.org>
+Copyright: Copyright (c) 2004-2006 John Goerzen
+homepage: http://software.complete.org/anydbm
+synopsis: Interface for DBM-like database systems
+Stability: Stable
+Hs-Source-Dirs: src
+Exposed-Modules: Database.AnyDBM,
+    Database.AnyDBM.MapDBM,
+    Database.AnyDBM.StringDBM
+Extensions: ExistentialQuantification, OverlappingInstances, 
+   UndecidableInstances, CPP
+Build-Depends: network, base,
+               haskell98, mtl 
+GHC-Options: -O2
+
+Executable: runtests
+Buildable: False
+Main-Is: runtests.hs
+HS-Source-Dirs: testsrc, .
+Extensions: ExistentialQuantification, OverlappingInstances,
+    UndecidableInstances, CPP
