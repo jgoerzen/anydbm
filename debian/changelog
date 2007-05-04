@@ -1,3 +1,9 @@
+haskell-anydbm (1.0.2) unstable; urgency=low
+
+  * Rebuild against newer MissingH.
+
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 04 May 2007 03:48:38 -0500
+
 haskell-anydbm (1.0.1) unstable; urgency=low
 
   * Switched to correct Setup.hs.

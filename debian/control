@@ -1,7 +1,7 @@
 Source: haskell-anydbm
 Priority: optional
 Maintainer: John Goerzen <jgoerzen@complete.org>
-Build-Depends: debhelper (>= 4.0.0), ghc6 (>= 6.6), ghc6 (<< 6.6-999), haskell-devscripts (>= 0.5.6), cpphs, libghc6-mtl-dev, libghc6-missingh-dev (>= 0.18.0)
+Build-Depends: debhelper (>= 4.0.0), ghc6 (>= 6.6), ghc6 (<< 6.6-999), haskell-devscripts (>= 0.5.6), cpphs, libghc6-mtl-dev, libghc6-missingh-dev (>= 0.18.4)
 Build-Depends-Indep: debhelper (>= 4.0.0), haddock, hugs (>= 98.200503.08), haskell-devscripts (>= 0.5.6), ghc6 (>= 6.6), cpphs, libhugs-missingh (>= 0.18.0)
 Standards-Version: 3.6.2
 Section: devel
@@ -9,7 +9,7 @@ Section: devel
 Package: libghc6-anydbm-dev
 Section: devel
 Architecture: any
-Depends: ${haskell:Depends}, libghc6-mtl-dev, libghc6-missingh-dev (>= 0.18.0)
+Depends: ${haskell:Depends}, libghc6-mtl-dev, libghc6-missingh-dev (>= 0.18.4)
 Suggests: anydbm-doc
 Description: Generic DBM-type interface for Haskell, GHC package
  This module provides a generic infrastructure for supporting storage
