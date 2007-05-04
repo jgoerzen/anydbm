@@ -1,6 +1,7 @@
 haskell-anydbm (1.0.2) unstable; urgency=low
 
   * Rebuild against newer MissingH.
+  * Update for newer Hugs.
 
  -- John Goerzen <jgoerzen@complete.org>  Fri, 04 May 2007 03:48:38 -0500
 
