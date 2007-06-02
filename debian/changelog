@@ -3,7 +3,7 @@ haskell-anydbm (1.0.3) unstable; urgency=low
   * Rebuilt for GHC 6.6.
   * Added build-dep on libhugs-hunit.  Closes: #422628.
 
- -- John Goerzen <jgoerzen@complete.org  Fri, 01 Jun 2007 22:09:07 -0500
+ -- John Goerzen <jgoerzen@complete.org>  Fri, 01 Jun 2007 22:09:07 -0500
 
 haskell-anydbm (1.0.2) unstable; urgency=low
 
