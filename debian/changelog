@@ -1,6 +1,7 @@
 haskell-anydbm (1.0.4) unstable; urgency=medium
 
   * Rebuild for newer MissingH.  Closes: #429707, #431857.
+  * Drop Hugs support due to lack of regex.
 
  -- John Goerzen <jgoerzen@complete.org>  Thu, 12 Jul 2007 00:09:24 -0500
 
