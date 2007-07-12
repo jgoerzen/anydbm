@@ -1,3 +1,9 @@
+haskell-anydbm (1.0.4) unstable; urgency=medium
+
+  * Rebuild for newer MissingH.  Closes: #429707, #431857.
+
+ -- John Goerzen <jgoerzen@complete.org>  Thu, 12 Jul 2007 00:09:24 -0500
+
 haskell-anydbm (1.0.3) unstable; urgency=low
 
   * Rebuilt for GHC 6.6.
