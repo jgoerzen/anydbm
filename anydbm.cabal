@@ -24,9 +24,9 @@ Exposed-Modules: Database.AnyDBM,
     Database.AnyDBM.MapDBM,
     Database.AnyDBM.StringDBM
 Extensions: ExistentialQuantification, OverlappingInstances, 
-   UndecidableInstances, CPP
+   UndecidableInstances, CPP, FlexibleInstances, TypeSynonymInstances
 Build-Depends: base,
-               haskell98, mtl, MissingH>=0.18.0
+               haskell98, mtl, MissingH>=1.0.0, containers
 GHC-Options: -O2
 
 Executable: runtests
@@ -34,4 +34,4 @@ Buildable: False
 Main-Is: runtests.hs
 HS-Source-Dirs: testsrc, .
 Extensions: ExistentialQuantification, OverlappingInstances,
-    UndecidableInstances, CPP
+    UndecidableInstances, CPP, FlexibleInstances
