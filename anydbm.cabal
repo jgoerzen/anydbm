@@ -1,8 +1,8 @@
 Name: anydbm
-Version: 1.0.4
+Version: 1.0.5
 License: GPL
 Maintainer: John Goerzen <jgoerzen@complete.org>
-Copyright: Copyright (c) 2004-2006 John Goerzen
+Copyright: Copyright (c) 2004-2008 John Goerzen
 license-file: COPYRIGHT
 extra-source-files: COPYING
 homepage: http://software.complete.org/anydbm
