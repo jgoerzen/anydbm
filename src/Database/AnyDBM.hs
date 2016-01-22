@@ -41,7 +41,7 @@ module Database.AnyDBM (-- * The AnyDBM class
 where
 import Prelude hiding (lookup)
 import System.IO
-import Data.HashTable
+import Data.HashTable.IO
 import Control.Exception
 import Data.List.Utils(strFromAL, strToAL)
 
@@ -160,7 +160,7 @@ strFromA :: AnyDBM a => a -> IO String
 strFromA h = do l <- toListA h 
                 return (strFromAL l)
 
-instance AnyDBM (HashTable String String) where
+instance BasicHashTable String String ~ hashtable => AnyDBM hashtable where
     insertA h k v = do delete h k
                        insert h k v
     deleteA = delete

@@ -24,9 +24,9 @@ Exposed-Modules: Database.AnyDBM,
     Database.AnyDBM.MapDBM,
     Database.AnyDBM.StringDBM
 Extensions: ExistentialQuantification, OverlappingInstances, 
-   UndecidableInstances, CPP, FlexibleInstances, TypeSynonymInstances
+   UndecidableInstances, CPP, FlexibleInstances, TypeSynonymInstances, TypeFamilies
 Build-Depends: base,
-               mtl, MissingH>=1.0.0, containers
+               mtl, MissingH>=1.0.0, containers, hashtables
 GHC-Options: -O2
 
 Executable: runtests
